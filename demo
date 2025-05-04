@@ -1,0 +1,33 @@
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+local win = DiscordLib:Window("sharkys script of ruining the economy")
+
+local serv = win:Server("Grinding *helper*", "")
+
+local btns = serv:Channel("Eggs")
+
+btns:Button("Money dupe 🔥🔥🔥", function()
+local args = {
+	"Judgement Hall AU",
+	-10000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Egg"):InvokeServer(unpack(args))
+end)
+btns:Button("Determination 🔥🔥🔥", function()
+local args = {
+	"Boss Egg 2",
+	-100000
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Egg"):InvokeServer(unpack(args))
+end)
+btns:Button("Free Fallen Gods [DISCLAIMER: REQUIRES 40 INVENTORY SPACE]", function()
+local args = {
+	"Boss Egg 2",
+	40
+}
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Egg"):InvokeServer(unpack(args))
+end)
+
+local lbls = serv:Channel("By Sharky")
+
+lbls:Label("DEMO VERSION, PAY 1000 ROBUX TO THE CREATOR FOR THE FULL VERSION")
